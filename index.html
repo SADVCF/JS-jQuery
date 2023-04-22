@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Carrera de Coches</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+</head>
+
+
+<body>
+  <h1>CARRERA DE COCHES</h1>
+  <br>
+    <h2>Seleccione la cantidad de coches:</h2>
+    <div class="contenedorSelect"> <!--CLASE QUE IDENTIFICA A TODO EL CONTENIDO DEL SELECT-->
+    <select id="cantidadCoches">
+      <option value="" selected>número de participantes</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    </div>
+    <br>
+    <div class="contenedorBotones"> <!--CLASE QUE IDENTIFICA A TODOS LOS BOTONES-->
+    <button id="iniciarCarrera">Iniciar Carrera</button>
+    <button id="reiniciar">Reiniciar</button>
+    </div>
+    <br><br>
+  
+    <div id="carrera"> <!--DIV QUE SITUA A LOS COCHES EN CARRETERA-->
+    </div>
+  
+    <table id="tablaResultados" class="tabla"> <!--TABLA QUE MUESTRA LOS RESULTADOS POR POSICIÓN DE LLEGADA A META-->
+      <caption>Tabla de Resultados</caption>
+      <thead>
+        <tr>
+          <th>Posición</th>
+          <th>Coche</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script> <!--EL SCRIPT QUE ACTIVA LA CARRERA-->
+  </body>
+
+  
+  
+</html>
